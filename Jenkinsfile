@@ -11,8 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install -g cnpm --registry=https://registry.npmmirror.com'
-                sh 'cnpm install'
+                sh 'npm install'
             }
         }
         stage('Test') {
